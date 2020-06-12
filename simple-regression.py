@@ -26,11 +26,10 @@ elif add_selectbox == 'Scatter Plot Data':
     st.subheader('Scatter Plot Data')
     st.dataframe(c_df)
 
-plt.scatter(c_df['ENGINESIZE'], c_df['CO2EMISSIONS'])
+plt.scatter(c_df['ENGINESIZE'], c_df['CO2EMISSIONS'], color='green')
 plt.title('Scatter plot of Enginesize and CO2 Emission')
 plt.xlabel('ENGINE SIZE')
 plt.ylabel('CO2 EMISSIONS')
-# plt.show()
 st.pyplot()
 
 
