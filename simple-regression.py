@@ -89,7 +89,7 @@ st.info("Hello, check the box below to show the model code!")
 
 @st.cache
 def codeData():
-    file_object = open('modelC.py,'r')
+    file_object = open('modelC.py','r')
     data00 = file_object.read()
     return data00
 
